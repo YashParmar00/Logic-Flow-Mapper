@@ -1,6 +1,6 @@
 export const POSITIONING = {
-  GAP_X: 220,
-  GAP_Y: 240,
-  ROOT_GAP_X: 260,
+  GAP_X: 620,
+  GAP_Y: 243,
+  ROOT_GAP_X: 530,
   ROOT_Y: 80,
 } as const;

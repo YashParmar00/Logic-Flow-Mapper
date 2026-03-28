@@ -23,7 +23,6 @@ import '@xyflow/react/dist/style.css';
 // Stable references to prevent React Flow warnings
 const NODE_TYPES = { custom: CustomNode } as const;
 const DEFAULT_EDGE_OPTIONS = { type: 'smoothstep' as const };
-const SNAP_GRID: [number, number] = [15, 15];
 const CONNECTION_LINE_STYLE = { stroke: '#94a3b8', strokeWidth: 2 };
 
 // More zoomed out initial view
@@ -258,8 +257,6 @@ export function FlowCanvas() {
         defaultEdgeOptions={DEFAULT_EDGE_OPTIONS}
         fitView
         fitViewOptions={FIT_VIEW_OPTIONS}
-        snapToGrid
-        snapGrid={SNAP_GRID}
         connectionLineStyle={CONNECTION_LINE_STYLE}
         deleteKeyCode={['Delete', 'Backspace']}
         minZoom={0.2}
